@@ -1,17 +1,17 @@
 # Debian 8.6 (Jessie)
 # Installer un serveur sécurisé LAMP (Linux Apache Mysql PHP)
 
-<p>Dernière modification : 18/11/2016</p>
+<p><em>Dernière modification : 18/11/2016</em></p>
 
-<p>Avant de commancer<br>
-Les commandes à taper dans le terminal commencent par : '=>'<br>
-Un commentaire commence toujours par : '#'</p>
+<pre>Avant de commancer
+Les commandes à taper dans le terminal commencent par : '=>'
+Un commentaire commence toujours par : '#'</pre>
 
-<p>Installation standard<br>
-  /<br>
-  /var<br>
-  /tmp<br>
-  /home</p>
+Installation standard
+  /
+  /var
+  /tmp
+  /home
 
 <p>Lors de l'installation il vous sera demandé :
 - Un mot de passe pour le compte 'root'
