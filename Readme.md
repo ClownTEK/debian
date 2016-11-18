@@ -143,7 +143,7 @@ Tester l'accès de Mysql
 Tester depuis un poste : http://IP
 On doit tomber sur la page : Debian Logo Apache2 Debian Default Page
 
-A SAVOIR : APACHE2 sera démarré automatiquement à chaque redémarrage, pratique !!!
+A SAVOIR : apache2 sera démarré automatiquement à chaque redémarrage, pratique !!!
 
 ### Installer Lynx (un navigateur pour terminal, très pratique)
 apt-get install lynx
@@ -223,6 +223,17 @@ Ajouter ceci :
 
 Tester !!!
 => lynx http://IP
+
+### Tester depuis un poste Windows !!!
+<p>
+Ouvrer bloc-note (notepad) avec les droits administrateur (bouton droit, exécuter en tant qu'administrateur)<br>
+Ouvrez le fichier 'c:\windows\system32\drivers\etc\hosts'<br>
+Ajoutez-y :</p>
+<pre>
+          192.168.0.14	www.debian.testing.local
+</pre>
+<p>Tester dans votre navigateur (IE, Chrome, Firefox) l'adresse : http://www.debian.testing.local</p>          
+
 
 <em>Enjoy!</em>
 
