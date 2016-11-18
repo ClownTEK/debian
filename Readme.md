@@ -7,15 +7,13 @@
 Les commandes à taper dans le terminal commencent par : '=>'
 Un commentaire commence toujours par : '#'</pre>
 
+<pre>
 Installation standard
-  /
-  /var
-  /tmp
-  /home
 
-<p>Lors de l'installation il vous sera demandé :
+Lors de l'installation il vous sera demandé :
 - Un mot de passe pour le compte 'root'
-- Création d'un compte utilisateur</p>
+- Création d'un compte utilisateur
+</pre>
 
 Ici, le nom de la machine est 'testing.labo.local'
 L'adresse IP est '192.168.0.14'
