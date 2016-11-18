@@ -22,7 +22,7 @@ L'adresse IP est '192.168.0.14'
 </pre>
 
 <pre>
-Une fois la machine démarré, pour passer en mode terminal, pressez les touches (en simultanée)
+Une fois la machine démarrée, pour passer en mode terminal, pressez les touches (en simultanée)
 Ctrl + Alt + F1
 </pre>
 
