@@ -9,7 +9,7 @@ Un commentaire commence toujours par : '#'
 </pre>
 
 <pre>
-Installation standard
+Installation standard, préférez une installation avec les partitions (/, /var, /home, /tmp) séparées
 
 Lors de l'installation il vous sera demandé :
 * Un mot de passe pour le compte root
@@ -91,7 +91,7 @@ nameserver 8.8.4.4 # DNS de Google
 => allow-hotplug eth0
 => iface eth0 inet dhcp
 ```
-### Pour nos tests, l'adresse du site internet sera : www.debian.testing.local
+### Pour nos tests, l'adresse de notre site web sera : www.debian.testing.local
 Modifier le fichier /etc/hosts comme suits, nul besoins d'un serveur 'bind' :
 ```sh
           127.0.0.1       localhost
