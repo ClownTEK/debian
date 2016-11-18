@@ -26,27 +26,27 @@ Une fois la machine démarré, pour passer en mode terminal, pressez les touches
 Ctrl + Alt + F1
 </pre>
 
-Quel est le nom de la machine ?
+### Quel est le nom de la machine ?
 ```sh
 => hostname
 ```
 
-Quel est mon adresse IP ?
+### Quel est mon adresse IP ?
 ```sh
 => ip a
 ```
 
-Comment modifier le mot de passe ?
+### Comment modifier le mot de passe ?
 ```sh
 => passwd nom_du_compte
 ```
 
-Passer en mode 'root'
+### Passer en mode 'root'
 ```sh
 => su
 ```
 
-Comment modifier le nom de la machine ?
+### Comment modifier le nom de la machine ?
 - modifier le fichier /etc/hostname
 - modifier le fichier /etc/hosts
 Par exemple, dans notre cas :
@@ -60,13 +60,13 @@ Par exemple, dans notre cas :
 => invoke-rc.d network-manager force-reload
 ```
 
-Quelle version de Debian est utilisée ?
+### Quelle version de Debian est utilisée ?
 ```sh
 => lsb_release -da
 => uname -a
 ```
 
-Comment paramétrer la carte réseau en manuel ?
+### Comment paramétrer la carte réseau en manuel ?
 ```sh
 => auto eth0
 => iface eth0 inet static
@@ -77,7 +77,7 @@ Comment paramétrer la carte réseau en manuel ?
         gateway 192.0.2.254
 ```
 
-Comment configurer les DNS ?
+### Comment configurer les DNS ?
 Modifier le fichier /etc/resolv.conf
 Exemple de contenu :
 ```sh
@@ -85,27 +85,27 @@ nameserver 8.8.8.8 # DNS de Google
 nameserver 8.8.4.4 # DNS de Google
 ```
 
-Comment paramétrer la carte réseau en DHCP ?
+### Comment paramétrer la carte réseau en DHCP ?
 ```sh
 => auto eth0
 => allow-hotplug eth0
 => iface eth0 inet dhcp
 ```
-Pour nos tests, l'adresse du site internet sera : www.debian.testing.local
+### Pour nos tests, l'adresse du site internet sera : www.debian.testing.local
 Modifier le fichier /etc/hosts comme suits, nul besoins d'un serveur 'bind' :
 ```sh
           127.0.0.1       localhost
           192.168.0.14    testing.labo.local      testing
           192.168.0.14    www.debian.testing.local # Notre site !!!
 ```
-Quelles ports sont actuellement ouverts ?
+### Quelles ports sont actuellement ouverts ?
 ```sh
 => netstat -plnt
 ```
 
 Par défaut le pare-feu est désactivé !!!!
 
-Configurer le pare-feu très simplement à l'aide de UFW (Uncomplicated Firewall)
+### Configurer le pare-feu très simplement à l'aide de UFW (Uncomplicated Firewall)
 ```sh
 => apt-get update
 => apt-get install ufw # on installe le framework ufw pour pouvoir administrer facilement le pare-feu
