@@ -5,21 +5,26 @@
 
 <pre>Avant de commancer
 Les commandes à taper dans le terminal commencent par : '=>'
-Un commentaire commence toujours par : '#'</pre>
+Un commentaire commence toujours par : '#'
+</pre>
 
 <pre>
 Installation standard
 
 Lors de l'installation il vous sera demandé :
-- Un mot de passe pour le compte 'root'
-- Création d'un compte utilisateur
+* Un mot de passe pour le compte root
+* Création d'un compte utilisateur
 </pre>
 
+<pre>
 Ici, le nom de la machine est 'testing.labo.local'
 L'adresse IP est '192.168.0.14'
+</pre>
 
+<pre>
 Une fois la machine démarré, pour passer en mode terminal, pressez les touches (en simultanée)
 Ctrl + Alt + F1
+</pre>
 
 Quel est le nom de la machine ?
 ```sh
@@ -114,7 +119,7 @@ Configurer le pare-feu très simplement à l'aide de UFW (Uncomplicated Firewall
 => ufw status verbose # Vérifier à nouveau l'état du pare-feu
 ```
 
-Installer Mysql
+### Installer Mysql
 ```sh
 => apt-get update
 => apt-get -y install mariadb-server mariadb-client # Lors de l'installation un mot de passe vous sera demandé pour configurer l'accès root de Mysql
@@ -125,7 +130,7 @@ Tester l'accès de Mysql
 => mysql -u root -p # Entrer le mot de passe que vous avez paramétré précédemment
 ```
 
-Installer Apache2
+### Installer Apache2
 ```sh
 => apt-get update
 => apt-get install apache2
@@ -140,7 +145,7 @@ On doit tomber sur la page : Debian Logo Apache2 Debian Default Page
 
 A SAVOIR : APACHE2 sera démarré automatiquement à chaque redémarrage, pratique !!!
 
-Installer Lynx (un navigateur pour terminal, très pratique)
+### Installer Lynx (un navigateur pour terminal, très pratique)
 apt-get install lynx
 Tester à nouveau votre page dans le terminal!!!
 ```sh
@@ -149,7 +154,7 @@ Tester à nouveau votre page dans le terminal!!!
 
 Quitter lynx à l'aide de la touche 'q' (2x)
 
-Créer le site www.debian.testing.local (version HTML a des fins de test)
+### Créer le site www.debian.testing.local (version HTML a des fins de test)
 ```sh
 => cd /etc/apache2/sites-available
 => cp 000-default.conf www.debian.testing.local.conf # ATTENTION NE PAS OUBLIER LE .CONF!!!
@@ -175,7 +180,7 @@ Tester !!!
 ```
 Vous devriez voir le message 'This site rocks!'
 
-Installer et configurer PHP 5
+### Installer et configurer PHP 5
 ```sh
 => apt-get install php5 libapache2-mod-php5
 => apt-get install php5-mysqlnd php5-curl php5-gd php5-intl php-pear php5-imagick
